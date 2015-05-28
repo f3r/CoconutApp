@@ -1,0 +1,12 @@
+{
+  "name": "coconutApp",
+  "app_id": "9a16c05b",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
