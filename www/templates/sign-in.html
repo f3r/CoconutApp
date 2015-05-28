@@ -1,16 +1,18 @@
 <ion-view view-title="Coconut">
   <ion-content class="padding">
     <div class="list list-inset">
-      <label class="item item-input">
-        <input type="text" placeholder="Email">
-      </label>
-      <label class="item item-input">
-        <input type="text" placeholder="Password">
-      </label>
-      <button class="button button-block button-positive">
-        Sign In
-      </button>
-      <small>Don't have an account yet? <a nav-transition="none" href="#/sign-up">Sign up!</a></small>
+      <form ng-submit="form.login()">
+        <label class="item item-input">
+          <input type="text" placeholder="Email" ng-model="user.email">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Password" ng-model="user.password">
+        </label>
+        <button class="button button-block button-positive">
+          Sign In
+        </button>
+        <small>Don't have an account yet? <a nav-transition="none" href="#/sign-up">Sign up!</a></small>
+      </form>
     </div>
     
   </ion-content>
